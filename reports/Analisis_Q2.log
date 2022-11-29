@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/juancarlosgonzalez/opt/anaconda3/lib/python3.9/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+fig = go.Figure(data=[
+    go.Bar(name='Almacenamiento MP & Servicios', x=Esenttia_complete_Almacenamiento_diario['timestamp'], y=Esenttia_complete_Almacenamiento_diario['Consumo (MWh)']),
+    go.Bar(name='Reacción', x=Esenttia_complete_Reacción_diario['timestamp'], y=Esenttia_complete_Reacción_diario['Consumo (MWh)']),
+    go.Bar(name='Almacenamiento MP', x=Esenttia_complete_Almacenamiento_MP_diario['timestamp'], y=Esenttia_complete_Almacenamiento_MP_diario['Consumo (MWh)']),
+    go.Bar(name='Servicios', x=Esenttia_complete_Servicios_diario['timestamp'], y=Esenttia_complete_Servicios_diario['Consumo (MWh)']),
+    go.Bar(name='Empaque', x=Esenttia_complete_Empaque_diario['timestamp'], y=Esenttia_complete_Empaque_diario['Consumo (MWh)']),
+    go.Bar(name='Peletizado', x=Esenttia_complete_Peletizado_diario['timestamp'], y=Esenttia_complete_Peletizado_diario['Consumo (MWh)']),
+    go.Bar(name='Recuperación', x=Esenttia_complete_Recuperación_diario['timestamp'], y=Esenttia_complete_Recuperación_diario['Consumo (MWh)']),
+])
+# Change the bar mode
+fig.update_layout(barmode='stack', title='Distribución de consumo por proceso -  Planta 1', width=900, height=600)
+fig.show()
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m/var/folders/br/__n9tzz53dqdxn0vpyzdg5840000gn/T/ipykernel_11863/2657730230.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      3[0m     [0mgo[0m[0;34m.[0m[0mBar[0m[0;34m([0m[0mname[0m[0;34m=[0m[0;34m'Reacción'[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mEsenttia_complete_Reacción_diario[0m[0;34m[[0m[0;34m'timestamp'[0m[0;34m][0m[0;34m,[0m [0my[0m[0;34m=[0m[0mEsenttia_complete_Reacción_diario[0m[0;34m[[0m[0;34m'Consumo (MWh)'[0m[0;34m][0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m     [0mgo[0m[0;34m.[0m[0mBar[0m[0;34m([0m[0mname[0m[0;34m=[0m[0;34m'Almacenamiento MP'[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mEsenttia_complete_Almacenamiento_MP_diario[0m[0;34m[[0m[0;34m'timestamp'[0m[0;34m][0m[0;34m,[0m [0my[0m[0;34m=[0m[0mEsenttia_complete_Almacenamiento_MP_diario[0m[0;34m[[0m[0;34m'Consumo (MWh)'[0m[0;34m][0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 5[0;31m     [0mgo[0m[0;34m.[0m[0mBar[0m[0;34m([0m[0mname[0m[0;34m=[0m[0;34m'Servicios'[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mEsenttia_complete_Servicios_diario[0m[0;34m[[0m[0;34m'timestamp'[0m[0;34m][0m[0;34m,[0m [0my[0m[0;34m=[0m[0mEsenttia_complete_Servicios_diario[0m[0;34m[[0m[0;34m'Consumo (MWh)'[0m[0;34m][0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      6[0m     [0mgo[0m[0;34m.[0m[0mBar[0m[0;34m([0m[0mname[0m[0;34m=[0m[0;34m'Empaque'[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mEsenttia_complete_Empaque_diario[0m[0;34m[[0m[0;34m'timestamp'[0m[0;34m][0m[0;34m,[0m [0my[0m[0;34m=[0m[0mEsenttia_complete_Empaque_diario[0m[0;34m[[0m[0;34m'Consumo (MWh)'[0m[0;34m][0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      7[0m     [0mgo[0m[0;34m.[0m[0mBar[0m[0;34m([0m[0mname[0m[0;34m=[0m[0;34m'Peletizado'[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mEsenttia_complete_Peletizado_diario[0m[0;34m[[0m[0;34m'timestamp'[0m[0;34m][0m[0;34m,[0m [0my[0m[0;34m=[0m[0mEsenttia_complete_Peletizado_diario[0m[0;34m[[0m[0;34m'Consumo (MWh)'[0m[0;34m][0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mNameError[0m: name 'Esenttia_complete_Servicios_diario' is not defined
+NameError: name 'Esenttia_complete_Servicios_diario' is not defined
+

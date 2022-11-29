@@ -1,0 +1,2971 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Gestión energética Esenttia &#8212; Informe Esenttia</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introducción" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Informe Esenttia</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Gestión energética Esenttia
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Analisis_Q2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAnalisis_Q2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Analisis_Q2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Gestión energética Esenttia
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planta-1">
+     Planta 1
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planta-2">
+     Planta 2
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analisis-por-maquina-planta-1">
+     Análisis por máquina - Planta 1
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-etileno-g-0259-y-compresor-de-nitrogeno-k-1102">
+       Bomba de Etileno (G-0259) y Compresor de Nitrógeno (K-1102)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-reactor-1-k-4003">
+       Compresor Reactor 1 (K-4003)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#modelacion-analitica">
+         Modelación Analitica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-propileno-area-20-g-0216">
+       Bomba de propileno area 20 (G-0216)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-propileno-g-0226">
+       Bomba de propileno (G-0226)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-calentador-propileno-g-0231">
+       Bomba calentador propileno (G-0231)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-calentador-propileno-g-0230-bomba-calentador-propileno-g-0232">
+       Bomba calentador propileno (G-0230) &amp; bomba calentador propileno (G-0232)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-cargue-de-propileno-g-2013-bomba-de-circulacion-de-agua-del-e-4002-g-4004">
+       Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-booster-de-propileno-g-2012">
+       Bomba booster de propileno (G-2012)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-circulacion-de-agua-de-torre-2-g-0402">
+       Bomba de Circulación de Agua de Torre 2 (G-0402)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-circulacion-de-agua-de-torre-4-g-0404">
+       Bomba de Circulación de Agua de Torre 4 (G-0404)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-circulacion-de-agua-de-torre-n5-g-0405">
+       Bomba de Circulación de Agua de Torre N°5 (G-0405)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bombas-de-agua-tratada-g-0446-y-g-0447">
+       Bombas de Agua Tratada (G-0446) y (G-0447)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ventilador-de-torres-de-enfriamiento-y-0400f2m">
+       Ventilador de Torres de Enfriamiento (Y_0400F2M)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ventilador-de-torres-de-enfriamiento-y-0400f3">
+       Ventilador de Torres de Enfriamiento Y-0400F3
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ventilador-de-torres-de-enfriamiento-y-0400f1m">
+       Ventilador de Torres de Enfriamiento (Y_0400F1M)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-etileno-k-0253">
+       Compresor de Etileno (K-0253)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-propileno-k-0204">
+       Compresor de Propileno (K-0204)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#motor-soplador-aire-de-transporte-k-0303-m">
+       Motor Soplador Aire de Transporte (K-0303-M)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#soplador-hacia-el-silo-de-almacenamiento-k-0309">
+       Soplador hacia el Silo de Almacenamiento (K-0309)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#extrusora-y-7101">
+       Extrusora Y-7101
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mixer-y-7001">
+       Mixer Y-7001
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id3">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-recuperacion-de-venteos-k-5234">
+       Compresor de Recuperación de Venteos (K-5234)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id4">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analisis-por-maquina-planta-2">
+     Análisis por máquina - Planta 2
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-inertes-20k010m01">
+       Compresor de inertes (20K010M01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#blender-aditivo-solido-a-03dn11am01">
+       Blender aditivo sólido A (03DN11AM01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#agitador-de-purga-20dn51m01">
+       Agitador de purga (20DN51M01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bombas-torre-de-enfriamiento-94p010cm01-y-94p010dm01">
+       Bombas torre de enfriamiento (94P010CM01) y (94P010DM01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bombas-torre-de-enfriamiento-94p010am01-y-94p010bm01">
+       Bombas torre de enfriamiento (94P010AM01) y (94P010BM01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-nitrogeno-k-1104">
+       COMPRESOR DE NITROGENO (K-1104)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#extrusora-21un20">
+       Extrusora 21UN20
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-20k060">
+       Compresor (20K060)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comentarios-equipo-celsia">
+   Comentarios Equipo CELSIA
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Gestión energética Esenttia</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Gestión energética Esenttia
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planta-1">
+     Planta 1
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planta-2">
+     Planta 2
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analisis-por-maquina-planta-1">
+     Análisis por máquina - Planta 1
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-etileno-g-0259-y-compresor-de-nitrogeno-k-1102">
+       Bomba de Etileno (G-0259) y Compresor de Nitrógeno (K-1102)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-reactor-1-k-4003">
+       Compresor Reactor 1 (K-4003)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#modelacion-analitica">
+         Modelación Analitica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-propileno-area-20-g-0216">
+       Bomba de propileno area 20 (G-0216)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-propileno-g-0226">
+       Bomba de propileno (G-0226)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-calentador-propileno-g-0231">
+       Bomba calentador propileno (G-0231)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-calentador-propileno-g-0230-bomba-calentador-propileno-g-0232">
+       Bomba calentador propileno (G-0230) &amp; bomba calentador propileno (G-0232)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-cargue-de-propileno-g-2013-bomba-de-circulacion-de-agua-del-e-4002-g-4004">
+       Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-booster-de-propileno-g-2012">
+       Bomba booster de propileno (G-2012)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-circulacion-de-agua-de-torre-2-g-0402">
+       Bomba de Circulación de Agua de Torre 2 (G-0402)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-circulacion-de-agua-de-torre-4-g-0404">
+       Bomba de Circulación de Agua de Torre 4 (G-0404)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bomba-de-circulacion-de-agua-de-torre-n5-g-0405">
+       Bomba de Circulación de Agua de Torre N°5 (G-0405)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bombas-de-agua-tratada-g-0446-y-g-0447">
+       Bombas de Agua Tratada (G-0446) y (G-0447)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ventilador-de-torres-de-enfriamiento-y-0400f2m">
+       Ventilador de Torres de Enfriamiento (Y_0400F2M)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ventilador-de-torres-de-enfriamiento-y-0400f3">
+       Ventilador de Torres de Enfriamiento Y-0400F3
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ventilador-de-torres-de-enfriamiento-y-0400f1m">
+       Ventilador de Torres de Enfriamiento (Y_0400F1M)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-etileno-k-0253">
+       Compresor de Etileno (K-0253)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-propileno-k-0204">
+       Compresor de Propileno (K-0204)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#motor-soplador-aire-de-transporte-k-0303-m">
+       Motor Soplador Aire de Transporte (K-0303-M)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#soplador-hacia-el-silo-de-almacenamiento-k-0309">
+       Soplador hacia el Silo de Almacenamiento (K-0309)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#extrusora-y-7101">
+       Extrusora Y-7101
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mixer-y-7001">
+       Mixer Y-7001
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id3">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-recuperacion-de-venteos-k-5234">
+       Compresor de Recuperación de Venteos (K-5234)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id4">
+         Modelación Analítica
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analisis-por-maquina-planta-2">
+     Análisis por máquina - Planta 2
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-inertes-20k010m01">
+       Compresor de inertes (20K010M01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#blender-aditivo-solido-a-03dn11am01">
+       Blender aditivo sólido A (03DN11AM01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#agitador-de-purga-20dn51m01">
+       Agitador de purga (20DN51M01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bombas-torre-de-enfriamiento-94p010cm01-y-94p010dm01">
+       Bombas torre de enfriamiento (94P010CM01) y (94P010DM01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bombas-torre-de-enfriamiento-94p010am01-y-94p010bm01">
+       Bombas torre de enfriamiento (94P010AM01) y (94P010BM01)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-de-nitrogeno-k-1104">
+       COMPRESOR DE NITROGENO (K-1104)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#extrusora-21un20">
+       Extrusora 21UN20
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compresor-20k060">
+       Compresor (20K060)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comentarios-equipo-celsia">
+   Comentarios Equipo CELSIA
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="gestion-energetica-esenttia">
+<h1>Gestión energética Esenttia<a class="headerlink" href="#gestion-energetica-esenttia" title="Permalink to this headline">#</a></h1>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>¡Hola! En Celsia revolucionamos para evolucionar, por eso, como tus asesores energéticos y aliados estratégicos, queremos ayudarte a gestionar de una manera óptima el consumo de tus energéticos, para esto te presentamos tus consumos correspondientes al periodo de estudio entre 2022-11-01 y 2022-11-15.</p>
+</div>
+</div>
+<p>En este informe encontrarás el análisis de los consumos de energía de Esenttia, incluyendo Planta 1, Planta 2 y sus respectivos dispositivos.</p>
+<p>En las gráficas se presentan 2 indicadores: la línea de consumo típico y la línea de meta de consumo que sirven como referencia respecto al consumo observado de energía para cada Planta y/o máquina. La línea de meta se calcula como la mediana de los datos resultantes de la extracción de los percentiles 25 y 50 de los datos de consumo. Así mismo, la línea de consumo típico es la mediana de la extracción de los datos entre los percentiles 5 y 95 de la distribución de la variable de interés, dándonos una línea de referencia de consumo típico durante el periodo. Este indicador es más robusto que el promedio porque no es sensible a las horas de no operación de la máquina.</p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Durante el periodo de estudio, el consumo medido fue de 4234.62 MWh, equivalente a una disminución de 852.64 MWh, lo que representa una disminución de 20.13% respecto al último periodo medido, con la siguiente desagregación diaria:
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_97_0.svg" src="_images/Analisis_Q2_97_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>A continuación, presentamos la desagregación del consumo general de Esenttia por cada planta; planta 1, planta 2 donde se aprecian los principales usos significativos de la energía, USE’s:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_99_0.svg" src="_images/Analisis_Q2_99_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Máquina</th>
+      <th>Consumo (MWh)</th>
+      <th>%_equivalente</th>
+      <th>%_Acumulado</th>
+      <th>Cantidad horas de operación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Extrusora Y-7101</td>
+      <td>1089.14</td>
+      <td>25.72</td>
+      <td>25.72</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Extrusora (21UN20)</td>
+      <td>827.64</td>
+      <td>19.54</td>
+      <td>45.26</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mixer Y-7001</td>
+      <td>817.83</td>
+      <td>19.31</td>
+      <td>64.58</td>
+      <td>317.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Compresor de Recuperación de Venteos (K-5234)</td>
+      <td>262.74</td>
+      <td>6.20</td>
+      <td>70.78</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Compresor Reactor 1 (K-4003)</td>
+      <td>246.35</td>
+      <td>5.82</td>
+      <td>76.60</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Compresor (20K060)</td>
+      <td>184.44</td>
+      <td>4.36</td>
+      <td>80.95</td>
+      <td>329.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Bombas torre de enfriamiento (94P010AM01) y (94P010BM01)</td>
+      <td>122.98</td>
+      <td>2.90</td>
+      <td>83.86</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Bombas torre de enfriamiento (94P010CM01) y (94P010DM01)</td>
+      <td>116.19</td>
+      <td>2.74</td>
+      <td>86.60</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Compresor de Propileno (K-0204)</td>
+      <td>91.47</td>
+      <td>2.16</td>
+      <td>88.76</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004)</td>
+      <td>56.04</td>
+      <td>1.32</td>
+      <td>90.09</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Compresor de Etileno (K-0253)</td>
+      <td>49.96</td>
+      <td>1.18</td>
+      <td>91.27</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Bomba de Circulación de Agua de Torre N°5 (G-0405)</td>
+      <td>45.84</td>
+      <td>1.08</td>
+      <td>92.35</td>
+      <td>336.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Bomba de Circulación de Agua de Torre 2 (G-0402)</td>
+      <td>43.53</td>
+      <td>1.03</td>
+      <td>93.38</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Otros</td>
+      <td>280.48</td>
+      <td>6.64</td>
+      <td>100.00</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Así mismo, al verificar el consumo por proceso, observamos lo siguiente:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_103_0.svg" src="_images/Analisis_Q2_103_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Proceso</th>
+      <th>Consumo (MWh)</th>
+      <th>%_equivalente</th>
+      <th>%_Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Peletizado</td>
+      <td>2734.84</td>
+      <td>64.58</td>
+      <td>64.58</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Servicios</td>
+      <td>462.66</td>
+      <td>10.93</td>
+      <td>75.51</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Recuperación</td>
+      <td>447.18</td>
+      <td>10.56</td>
+      <td>86.07</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Reacción</td>
+      <td>371.31</td>
+      <td>8.77</td>
+      <td>94.84</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Almacenamiento MP</td>
+      <td>164.76</td>
+      <td>3.89</td>
+      <td>98.73</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Empaque</td>
+      <td>45.89</td>
+      <td>1.08</td>
+      <td>99.81</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Otros</td>
+      <td>7.98</td>
+      <td>0.19</td>
+      <td>100.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Finalmente, te presentamos la distribución diaria de cada proceso:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_107_0.svg" src="_images/Analisis_Q2_107_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Finalmente, en términos de eficiencia de proceso, observamos el siguiente comportamiento díario:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_109_0.svg" src="_images/Analisis_Q2_109_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_110_0.svg" src="_images/Analisis_Q2_110_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Al analizar el comportamiento por planta, observamos lo siguiente:</p>
+</div>
+</div>
+<section id="planta-1">
+<h2>Planta 1<a class="headerlink" href="#planta-1" title="Permalink to this headline">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Durante el periodo de estudio, el consumo total de la Planta 1 fue de 2888.2 MWh, equivalente a una disminución de 294.72 MWh, lo que representa una disminución de 10.2% respecto al último periodo medido, con la siguiente desagregación diaria:
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_115_0.svg" src="_images/Analisis_Q2_115_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>A continuación, presentamos la desagregación del consumo general de planta 1, donde se aprecian los principales usos significativos de la energía, USE’s:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_117_0.svg" src="_images/Analisis_Q2_117_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Máquina</th>
+      <th>Consumo (MWh)</th>
+      <th>%_equivalente</th>
+      <th>%_Acumulado</th>
+      <th>Cantidad horas de operación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Extrusora Y-7101</td>
+      <td>1181.06</td>
+      <td>37.72</td>
+      <td>37.72</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Mixer Y-7001</td>
+      <td>895.46</td>
+      <td>28.60</td>
+      <td>66.32</td>
+      <td>341.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Compresor de Recuperación de Venteos (K-5234)</td>
+      <td>286.76</td>
+      <td>9.16</td>
+      <td>75.48</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Compresor Reactor 1 (K-4003)</td>
+      <td>264.43</td>
+      <td>8.45</td>
+      <td>83.92</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Compresor de Propileno (K-0204)</td>
+      <td>97.81</td>
+      <td>3.12</td>
+      <td>87.05</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004)</td>
+      <td>60.46</td>
+      <td>1.93</td>
+      <td>88.98</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Compresor de Etileno (K-0253)</td>
+      <td>52.74</td>
+      <td>1.68</td>
+      <td>90.66</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Bomba de Circulación de Agua de Torre N°5 (G-0405)</td>
+      <td>49.20</td>
+      <td>1.57</td>
+      <td>92.24</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Bomba de Circulación de Agua de Torre 2 (G-0402)</td>
+      <td>46.92</td>
+      <td>1.50</td>
+      <td>93.73</td>
+      <td>252.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bomba de Circulación de Agua de Torre 4 (G-0404)</td>
+      <td>40.09</td>
+      <td>1.28</td>
+      <td>95.01</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Motor Soplador Aire de Transporte (K-0303-M)</td>
+      <td>32.06</td>
+      <td>1.02</td>
+      <td>96.04</td>
+      <td>349.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Otros</td>
+      <td>124.06</td>
+      <td>3.97</td>
+      <td>100.00</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Así mismo, al verificar el consumo por proceso, observamos lo siguiente:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_122_0.svg" src="_images/Analisis_Q2_122_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Proceso</th>
+      <th>Consumo (MWh)</th>
+      <th>%_equivalente</th>
+      <th>%_Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Peletizado</td>
+      <td>17066.56</td>
+      <td>69.56</td>
+      <td>69.56</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Reacción</td>
+      <td>2684.29</td>
+      <td>10.94</td>
+      <td>80.50</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Recuperación</td>
+      <td>1936.67</td>
+      <td>7.89</td>
+      <td>88.39</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Almacenamiento MP</td>
+      <td>1506.15</td>
+      <td>6.14</td>
+      <td>94.53</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Servicios</td>
+      <td>980.91</td>
+      <td>4.00</td>
+      <td>98.53</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Empaque</td>
+      <td>318.74</td>
+      <td>1.30</td>
+      <td>99.83</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Otros</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_124_0.svg" src="_images/Analisis_Q2_124_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Finalmente, en términos de eficiencia de proceso, observamos el siguiente comportamiento díario:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_126_0.svg" src="_images/Analisis_Q2_126_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_127_0.svg" src="_images/Analisis_Q2_127_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Ahora, observemos el comportamiento de Planta 2:</p>
+</div>
+</div>
+</section>
+<section id="planta-2">
+<h2>Planta 2<a class="headerlink" href="#planta-2" title="Permalink to this headline">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Durante el periodo de estudio, el consumo total de la Planta 2 fue de 1346.42 MWh, equivalente a una disminución de 557.93 MWh, lo que representa una disminución de 41.44% respecto al último periodo medido, con la siguiente desagregación diaria:
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_132_0.svg" src="_images/Analisis_Q2_132_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>A continuación, presentamos la desagregación del consumo general de planta 2, donde se aprecian los principales usos significativos de la energía, USE’s:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_134_0.svg" src="_images/Analisis_Q2_134_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Máquina</th>
+      <th>Consumo (MWh)</th>
+      <th>%_equivalente</th>
+      <th>%_Acumulado</th>
+      <th>Cantidad horas de operación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Extrusora (21UN20)</td>
+      <td>920.86</td>
+      <td>62.41</td>
+      <td>62.41</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Compresor (20K060)</td>
+      <td>197.33</td>
+      <td>13.37</td>
+      <td>75.78</td>
+      <td>353.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bombas torre de enfriamiento (94P010AM01) y (94P010BM01)</td>
+      <td>131.76</td>
+      <td>8.93</td>
+      <td>84.71</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bombas torre de enfriamiento (94P010CM01) y (94P010DM01)</td>
+      <td>124.49</td>
+      <td>8.44</td>
+      <td>93.14</td>
+      <td>360.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Compresor de inertes (20K010M01)</td>
+      <td>35.89</td>
+      <td>2.43</td>
+      <td>95.58</td>
+      <td>350.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Agitador de purga (20DN51M01)</td>
+      <td>32.48</td>
+      <td>2.20</td>
+      <td>97.78</td>
+      <td>289.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>COMPRESOR DE NITROGENO (K-1104)</td>
+      <td>26.13</td>
+      <td>1.77</td>
+      <td>99.55</td>
+      <td>281.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Otros</td>
+      <td>6.65</td>
+      <td>0.45</td>
+      <td>100.00</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Así mismo, al verificar el consumo por proceso, observamos lo siguiente:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_139_0.svg" src="_images/Analisis_Q2_139_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Proceso</th>
+      <th>Consumo (MWh)</th>
+      <th>%_equivalente</th>
+      <th>%_Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Peletizado</td>
+      <td>9820.18</td>
+      <td>69.65</td>
+      <td>69.65</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Servicios</td>
+      <td>2252.97</td>
+      <td>15.98</td>
+      <td>85.63</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Recuperación</td>
+      <td>1640.51</td>
+      <td>11.64</td>
+      <td>97.27</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Reacción</td>
+      <td>385.59</td>
+      <td>2.73</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Otros</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_141_0.svg" src="_images/Analisis_Q2_141_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Finalmente, en términos de eficiencia de proceso, observamos el siguiente comportamiento díario:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_143_0.svg" src="_images/Analisis_Q2_143_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_144_0.svg" src="_images/Analisis_Q2_144_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Ahora, observemos el comportamiento por Máquina</p>
+</div>
+</div>
+</section>
+<section id="analisis-por-maquina-planta-1">
+<h2>Análisis por máquina - Planta 1<a class="headerlink" href="#analisis-por-maquina-planta-1" title="Permalink to this headline">#</a></h2>
+<section id="bomba-de-etileno-g-0259-y-compresor-de-nitrogeno-k-1102">
+<h3>Bomba de Etileno (G-0259) y Compresor de Nitrógeno (K-1102)<a class="headerlink" href="#bomba-de-etileno-g-0259-y-compresor-de-nitrogeno-k-1102" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 8.01 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de Etileno (G-0259) y el Compresor de Nitrógeno (K-1102) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_150_0.svg" src="_images/Analisis_Q2_150_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_151_0.svg" src="_images/Analisis_Q2_151_0.svg" /></div>
+</div>
+</section>
+<section id="compresor-reactor-1-k-4003">
+<h3>Compresor Reactor 1 (K-4003)<a class="headerlink" href="#compresor-reactor-1-k-4003" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 247.1 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día del Compresor Reactor 1 (K-4003) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_155_0.svg" src="_images/Analisis_Q2_155_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_157_0.svg" src="_images/Analisis_Q2_157_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio -12722.07704870767
+AIC Periodo Anterior -7231.003350099572
+R^2 Periodo de estudio 0.10856183552466303
+R^2 Periodo Anterior 0.2086609702654535
+MSE Periodo de estudio 0.00011620583468708809
+MSE Periodo Anterior 9.643489131738481e-05
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_158_0.svg" src="_images/Analisis_Q2_158_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 15349.953736612664
+AIC Periodo Anterior 7892.800672481451
+R^2 Periodo de estudio 0.8810848138101995
+R^2 Periodo Anterior 0.7915268845235989
+MSE Periodo de estudio 1026.9752045114228
+MSE Periodo Anterior 393.4935082380348
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_159_0.svg" src="_images/Analisis_Q2_159_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_160_0.svg" src="_images/Analisis_Q2_160_0.svg" /></div>
+</div>
+<section id="modelacion-analitica">
+<h4>Modelación Analitica<a class="headerlink" href="#modelacion-analitica" title="Permalink to this headline">#</a></h4>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R^2 medio 0.9381947651551752
+Error cuadratico medio sobre el conjunto de Test: 55.38 kW
+</pre></div>
+</div>
+<img alt="_images/Analisis_Q2_162_1.svg" src="_images/Analisis_Q2_162_1.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A continuación se pueden observar los pesos de cada variable en el modelo, estos nos sirven para identificar las variables claves que afectan el consumo del compresor:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Temp salida H2O E-4002 (F_CV)</th>
+      <td>176.33</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas Flow (F_CV)</th>
+      <td>111.30</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas Density (F_CV)</th>
+      <td>81.77</td>
+    </tr>
+    <tr>
+      <th>Rx2 Filt Final Production Rate (F_CV)</th>
+      <td>59.65</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas N2 (F_CV)</th>
+      <td>56.96</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas H2 (F_CV)</th>
+      <td>54.75</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cooler DP (F_CV)</th>
+      <td>27.38</td>
+    </tr>
+    <tr>
+      <th>Rx1 Compressor DP (F_CV)</th>
+      <td>17.94</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas C2H4 (F_CV)</th>
+      <td>-1.61</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas C2H6 (F_CV)</th>
+      <td>-2.57</td>
+    </tr>
+    <tr>
+      <th>Rx1 Compressor Discharge Temperature (F_CV)</th>
+      <td>-4.31</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Water Flow (F_CV)</th>
+      <td>-26.14</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas Flow (F_CV)</th>
+      <td>-55.65</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas C3H8 (F_CV)</th>
+      <td>-64.07</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Gas C3H6 (F_CV)</th>
+      <td>-65.07</td>
+    </tr>
+    <tr>
+      <th>Rx1 Pressure Control (F_CV)</th>
+      <td>-99.12</td>
+    </tr>
+    <tr>
+      <th>Rx1 Cycle Water Cooler Inlet Temperature (F_CV)</th>
+      <td>-104.79</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="bomba-de-propileno-area-20-g-0216">
+<h3>Bomba de propileno area 20 (G-0216)<a class="headerlink" href="#bomba-de-propileno-area-20-g-0216" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 23.42 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de propileno area 20 (G-0216) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_170_0.svg" src="_images/Analisis_Q2_170_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_171_0.svg" src="_images/Analisis_Q2_171_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-de-propileno-g-0226">
+<h3>Bomba de propileno (G-0226)<a class="headerlink" href="#bomba-de-propileno-g-0226" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 0.0 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de propileno (G-0226)  puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_175_0.svg" src="_images/Analisis_Q2_175_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_176_0.svg" src="_images/Analisis_Q2_176_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-calentador-propileno-g-0231">
+<h3>Bomba calentador propileno (G-0231)<a class="headerlink" href="#bomba-calentador-propileno-g-0231" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 0.0 MWh, lo que representa una diferencia de 2.14 MWh respecto al periodo anterior.</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba calentador propileno (G-0231)  puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_180_0.svg" src="_images/Analisis_Q2_180_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_181_0.svg" src="_images/Analisis_Q2_181_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-calentador-propileno-g-0230-bomba-calentador-propileno-g-0232">
+<h3>Bomba calentador propileno (G-0230) &amp; bomba calentador propileno (G-0232)<a class="headerlink" href="#bomba-calentador-propileno-g-0230-bomba-calentador-propileno-g-0232" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 7.57 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba calentador propileno (G-0230) &amp; bomba calentador propileno (G-0232) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_185_0.svg" src="_images/Analisis_Q2_185_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_186_0.svg" src="_images/Analisis_Q2_186_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-de-cargue-de-propileno-g-2013-bomba-de-circulacion-de-agua-del-e-4002-g-4004">
+<h3>Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004)<a class="headerlink" href="#bomba-de-cargue-de-propileno-g-2013-bomba-de-circulacion-de-agua-del-e-4002-g-4004" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 56.27 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_190_0.svg" src="_images/Analisis_Q2_190_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_191_0.svg" src="_images/Analisis_Q2_191_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-booster-de-propileno-g-2012">
+<h3>Bomba booster de propileno (G-2012)<a class="headerlink" href="#bomba-booster-de-propileno-g-2012" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 0.13 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba booster de propileno (G-2012) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_200_0.svg" src="_images/Analisis_Q2_200_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_201_0.svg" src="_images/Analisis_Q2_201_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-de-circulacion-de-agua-de-torre-2-g-0402">
+<h3>Bomba de Circulación de Agua de Torre 2 (G-0402)<a class="headerlink" href="#bomba-de-circulacion-de-agua-de-torre-2-g-0402" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 43.53 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de Circulación de Agua de Torre 2 (G-0402) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_205_0.svg" src="_images/Analisis_Q2_205_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_206_0.svg" src="_images/Analisis_Q2_206_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-de-circulacion-de-agua-de-torre-4-g-0404">
+<h3>Bomba de Circulación de Agua de Torre 4 (G-0404)<a class="headerlink" href="#bomba-de-circulacion-de-agua-de-torre-4-g-0404" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 40.09 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de Circulación de Agua de Torre 4 (G-0404) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_210_0.svg" src="_images/Analisis_Q2_210_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_211_0.svg" src="_images/Analisis_Q2_211_0.svg" /></div>
+</div>
+</section>
+<section id="bomba-de-circulacion-de-agua-de-torre-n5-g-0405">
+<h3>Bomba de Circulación de Agua de Torre N°5 (G-0405)<a class="headerlink" href="#bomba-de-circulacion-de-agua-de-torre-n5-g-0405" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 45.98 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para la Bomba de Circulación de Agua de Torre N°5 (G-0405) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_215_0.svg" src="_images/Analisis_Q2_215_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_216_0.svg" src="_images/Analisis_Q2_216_0.svg" /></div>
+</div>
+</section>
+<section id="bombas-de-agua-tratada-g-0446-y-g-0447">
+<h3>Bombas de Agua Tratada (G-0446) y (G-0447)<a class="headerlink" href="#bombas-de-agua-tratada-g-0446-y-g-0447" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 0.2 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para las Bombas de Agua Tratada (G-0446) y (G-0447) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_220_0.svg" src="_images/Analisis_Q2_220_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_221_0.svg" src="_images/Analisis_Q2_221_0.svg" /></div>
+</div>
+</section>
+<section id="ventilador-de-torres-de-enfriamiento-y-0400f2m">
+<h3>Ventilador de Torres de Enfriamiento (Y_0400F2M)<a class="headerlink" href="#ventilador-de-torres-de-enfriamiento-y-0400f2m" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 19.36 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para el Ventilador de Torres de Enfriamiento (Y_0400F2M) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_225_0.svg" src="_images/Analisis_Q2_225_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_226_0.svg" src="_images/Analisis_Q2_226_0.svg" /></div>
+</div>
+</section>
+<section id="ventilador-de-torres-de-enfriamiento-y-0400f3">
+<h3>Ventilador de Torres de Enfriamiento Y-0400F3<a class="headerlink" href="#ventilador-de-torres-de-enfriamiento-y-0400f3" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 21.13 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para el Ventilador de Torres de Enfriamiento (Y_0400F3) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_230_0.svg" src="_images/Analisis_Q2_230_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_231_0.svg" src="_images/Analisis_Q2_231_0.svg" /></div>
+</div>
+</section>
+<section id="ventilador-de-torres-de-enfriamiento-y-0400f1m">
+<h3>Ventilador de Torres de Enfriamiento (Y_0400F1M)<a class="headerlink" href="#ventilador-de-torres-de-enfriamiento-y-0400f1m" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 19.81 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para el Ventilador de Torres de Enfriamiento (Y_0400F1M) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_235_0.svg" src="_images/Analisis_Q2_235_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_236_0.svg" src="_images/Analisis_Q2_236_0.svg" /></div>
+</div>
+</section>
+<section id="compresor-de-etileno-k-0253">
+<h3>Compresor de Etileno (K-0253)<a class="headerlink" href="#compresor-de-etileno-k-0253" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 50.1 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_239_0.svg" src="_images/Analisis_Q2_239_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_243_0.svg" src="_images/Analisis_Q2_243_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_244_0.svg" src="_images/Analisis_Q2_244_0.svg" /></div>
+</div>
+</section>
+<section id="compresor-de-propileno-k-0204">
+<h3>Compresor de Propileno (K-0204)<a class="headerlink" href="#compresor-de-propileno-k-0204" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 91.75 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_247_0.svg" src="_images/Analisis_Q2_247_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_249_0.svg" src="_images/Analisis_Q2_249_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 9792.15569405221
+AIC Periodo Anterior 6196.88184506254
+R^2 Periodo de estudio 0.04194788252652193
+R^2 Periodo Anterior 0.04757165759811821
+MSE Periodo de estudio 14.40643064478909
+MSE Periodo Anterior 21.798514846747075
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_250_0.svg" src="_images/Analisis_Q2_250_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 9836.038343752825
+AIC Periodo Anterior 6247.467889698795
+R^2 Periodo de estudio 0.01819740508862977
+R^2 Periodo Anterior 0.000791235218494557
+MSE Periodo de estudio 14.40643064478909
+MSE Periodo Anterior 21.79851484674707
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_251_0.svg" src="_images/Analisis_Q2_251_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 9260.439861204191
+AIC Periodo Anterior 5052.305413023516
+R^2 Periodo de estudio 0.28792321173473834
+R^2 Periodo Anterior 0.6781426926523524
+MSE Periodo de estudio 14.40643064478909
+MSE Periodo Anterior 21.798514846747075
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_252_0.svg" src="_images/Analisis_Q2_252_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 9668.74803951948
+AIC Periodo Anterior 5465.790285714735
+R^2 Periodo de estudio 0.10570446177084769
+R^2 Periodo Anterior 0.5237051516721978
+MSE Periodo de estudio 14.40643064478909
+MSE Periodo Anterior 21.79851484674707
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_254_0.svg" src="_images/Analisis_Q2_254_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_255_0.svg" src="_images/Analisis_Q2_255_0.svg" /></div>
+</div>
+<section id="id1">
+<h4>Modelación Analítica<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R^2 medio 0.5736841500139191
+Error cuadratico medio sobre el conjunto de Test: 9.26 kW
+</pre></div>
+</div>
+<img alt="_images/Analisis_Q2_257_1.svg" src="_images/Analisis_Q2_257_1.svg" /><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Presión de succión etapa 1</th>
+      <td>31.54</td>
+    </tr>
+    <tr>
+      <th>Presion de descarga etapa 2</th>
+      <td>5.88</td>
+    </tr>
+    <tr>
+      <th>Temperatura venteo condensador</th>
+      <td>-1.84</td>
+    </tr>
+    <tr>
+      <th>Temperatura de succión</th>
+      <td>-7.85</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="motor-soplador-aire-de-transporte-k-0303-m">
+<h3>Motor Soplador Aire de Transporte (K-0303-M)<a class="headerlink" href="#motor-soplador-aire-de-transporte-k-0303-m" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 29.94 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para el Motor Soplador Aire de Transporte (K-0303-M) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_261_0.svg" src="_images/Analisis_Q2_261_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_262_0.svg" src="_images/Analisis_Q2_262_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 16.12 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para el Soplador de Transporte de Pellets (K-0305), Soplador hacia el Silo de Almacenamiento (K-0308) &amp; Soplador hacia Empaque (K-0311) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_266_0.svg" src="_images/Analisis_Q2_266_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_267_0.svg" src="_images/Analisis_Q2_267_0.svg" /></div>
+</div>
+</section>
+<section id="soplador-hacia-el-silo-de-almacenamiento-k-0309">
+<h3>Soplador hacia el Silo de Almacenamiento (K-0309)<a class="headerlink" href="#soplador-hacia-el-silo-de-almacenamiento-k-0309" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 0.0 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>El consumo por día para el Soplador hacia el Silo de Almacenamiento (K-0309) puede ser observado en la siguiente gráfica:</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_276_0.svg" src="_images/Analisis_Q2_276_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_277_0.svg" src="_images/Analisis_Q2_277_0.svg" /></div>
+</div>
+</section>
+<section id="extrusora-y-7101">
+<h3>Extrusora Y-7101<a class="headerlink" href="#extrusora-y-7101" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 1093.03 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_280_0.svg" src="_images/Analisis_Q2_280_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_282_0.svg" src="_images/Analisis_Q2_282_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 36508.48169798488
+AIC Periodo Anterior 14895.244408796369
+R^2 Periodo de estudio 0.9354365437909925
+R^2 Periodo Anterior 0.7046074629436192
+MSE Periodo de estudio 2214020.5417243843
+MSE Periodo Anterior 274925.6035332285
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_283_0.svg" src="_images/Analisis_Q2_283_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_284_0.svg" src="_images/Analisis_Q2_284_0.svg" /></div>
+</div>
+<section id="id2">
+<h4>Modelación Analítica<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R^2 medio 0.8869265771071367
+Error cuadratico medio sobre el conjunto de Test: 35458.05 kW
+</pre></div>
+</div>
+<img alt="_images/Analisis_Q2_286_1.svg" src="_images/Analisis_Q2_286_1.svg" /><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Alimento de polvo</th>
+      <td>1594.79</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 6</th>
+      <td>1239.17</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 5</th>
+      <td>231.67</td>
+    </tr>
+    <tr>
+      <th>Melt Temp Disch Ext Uno</th>
+      <td>139.01</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 9</th>
+      <td>104.37</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 4</th>
+      <td>71.33</td>
+    </tr>
+    <tr>
+      <th>Rata reproceso Extrusora P1</th>
+      <td>-23.27</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 8</th>
+      <td>-41.61</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 10</th>
+      <td>-103.17</td>
+    </tr>
+    <tr>
+      <th>Producto Peletizado - Extruder P1 (A_CV)</th>
+      <td>-400.75</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 2</th>
+      <td>-525.50</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 7</th>
+      <td>-533.85</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 3</th>
+      <td>-895.35</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="mixer-y-7001">
+<h3>Mixer Y-7001<a class="headerlink" href="#mixer-y-7001" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 821.11 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_289_0.svg" src="_images/Analisis_Q2_289_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_291_0.svg" src="_images/Analisis_Q2_291_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 28130.910634330747
+AIC Periodo Anterior 16992.2559671529
+R^2 Periodo de estudio 0.6546020343571601
+R^2 Periodo Anterior 0.5064070261166933
+MSE Periodo de estudio 269226.49446334306
+MSE Periodo Anterior 175120.71970095576
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_292_0.svg" src="_images/Analisis_Q2_292_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_293_0.svg" src="_images/Analisis_Q2_293_0.svg" /></div>
+</div>
+<section id="id3">
+<h4>Modelación Analítica<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R^2 medio 0.813658544397264
+Error cuadratico medio sobre el conjunto de Test: 24175.67 kW
+</pre></div>
+</div>
+<img alt="_images/Analisis_Q2_295_1.svg" src="_images/Analisis_Q2_295_1.svg" /><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Temp Barril T 7001 2C</th>
+      <td>1213.80</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 2A</th>
+      <td>921.46</td>
+    </tr>
+    <tr>
+      <th>Melt Temp Y-7004</th>
+      <td>903.23</td>
+    </tr>
+    <tr>
+      <th>Rata Y-7001 (F_CV)</th>
+      <td>764.76</td>
+    </tr>
+    <tr>
+      <th>Rate Mixer</th>
+      <td>764.76</td>
+    </tr>
+    <tr>
+      <th>Disch Pres Y-7004</th>
+      <td>607.63</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 10A</th>
+      <td>319.74</td>
+    </tr>
+    <tr>
+      <th>Rata Reproceso Mixer</th>
+      <td>179.51</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 10D</th>
+      <td>44.84</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 10B</th>
+      <td>32.83</td>
+    </tr>
+    <tr>
+      <th>Aux Motor Load (F_CV)</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 2B</th>
+      <td>-176.92</td>
+    </tr>
+    <tr>
+      <th>Producto Peletizado - Mixer P1 (A_CV)</th>
+      <td>-274.34</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 2D</th>
+      <td>-479.33</td>
+    </tr>
+    <tr>
+      <th>Temp Barril T 7001 10C</th>
+      <td>-594.77</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="compresor-de-recuperacion-de-venteos-k-5234">
+<h3>Compresor de Recuperación de Venteos (K-5234)<a class="headerlink" href="#compresor-de-recuperacion-de-venteos-k-5234" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 263.7 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_298_0.svg" src="_images/Analisis_Q2_298_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_300_0.svg" src="_images/Analisis_Q2_300_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 6532.258064371859
+AIC Periodo Anterior 4389.281898385323
+R^2 Periodo de estudio 0.49105280589690914
+R^2 Periodo Anterior 0.7098522700353016
+MSE Periodo de estudio 2691.961039274431
+MSE Periodo Anterior 1349.2241480862085
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_301_0.svg" src="_images/Analisis_Q2_301_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio -4525.733266519146
+AIC Periodo Anterior -4393.443395203074
+R^2 Periodo de estudio 0.7827460259101338
+R^2 Periodo Anterior 0.7829738309036842
+MSE Periodo de estudio 8.652142676545526e-05
+MSE Periodo Anterior 2.244938672977051e-05
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_302_0.svg" src="_images/Analisis_Q2_302_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_303_0.svg" src="_images/Analisis_Q2_303_0.svg" /></div>
+</div>
+<section id="id4">
+<h4>Modelación Analítica<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R^2 medio 0.7663229250994182
+Error cuadratico medio sobre el conjunto de Test: 670.08 kW
+</pre></div>
+</div>
+<img alt="_images/Analisis_Q2_305_1.svg" src="_images/Analisis_Q2_305_1.svg" /><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Suction Temp. 2nd Stage (F_CV)</th>
+      <td>298.52</td>
+    </tr>
+    <tr>
+      <th>Flujo compresor K-5234 (F_CV)</th>
+      <td>230.90</td>
+    </tr>
+    <tr>
+      <th>Discharge Pressure Stage 3 (F_CV)</th>
+      <td>123.94</td>
+    </tr>
+    <tr>
+      <th>Suction Pressure Stage 1 (HIMA) (F_CV)</th>
+      <td>51.89</td>
+    </tr>
+    <tr>
+      <th>Discharge Temp 1st Stage (F_CV)</th>
+      <td>29.95</td>
+    </tr>
+    <tr>
+      <th>Suction Temp. 1st Stage (F_CV)</th>
+      <td>-20.18</td>
+    </tr>
+    <tr>
+      <th>Discharge Temp 2nd Stage (F_CV)</th>
+      <td>-35.06</td>
+    </tr>
+    <tr>
+      <th>Discharge Temp 3rd Stage (F_CV)</th>
+      <td>-110.10</td>
+    </tr>
+    <tr>
+      <th>Suction Temp. 3rd Stage (F_CV)</th>
+      <td>-413.78</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+</section>
+<section id="analisis-por-maquina-planta-2">
+<h2>Análisis por máquina - Planta 2<a class="headerlink" href="#analisis-por-maquina-planta-2" title="Permalink to this headline">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 5.79 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_309_0.svg" src="_images/Analisis_Q2_309_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_310_0.svg" src="_images/Analisis_Q2_310_0.svg" /></div>
+</div>
+<section id="compresor-de-inertes-20k010m01">
+<h3>Compresor de inertes (20K010M01)<a class="headerlink" href="#compresor-de-inertes-20k010m01" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 33.47 MWh, lo que representa una diferencia de 3.96 MWh respecto al periodo anterior.</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_313_0.svg" src="_images/Analisis_Q2_313_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_314_0.svg" src="_images/Analisis_Q2_314_0.svg" /></div>
+</div>
+</section>
+<section id="blender-aditivo-solido-a-03dn11am01">
+<h3>Blender aditivo sólido A (03DN11AM01)<a class="headerlink" href="#blender-aditivo-solido-a-03dn11am01" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 0.23 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_317_0.svg" src="_images/Analisis_Q2_317_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_318_0.svg" src="_images/Analisis_Q2_318_0.svg" /></div>
+</div>
+</section>
+<section id="agitador-de-purga-20dn51m01">
+<h3>Agitador de purga (20DN51M01)<a class="headerlink" href="#agitador-de-purga-20dn51m01" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 29.74 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_321_0.svg" src="_images/Analisis_Q2_321_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_322_0.svg" src="_images/Analisis_Q2_322_0.svg" /></div>
+</div>
+</section>
+<section id="bombas-torre-de-enfriamiento-94p010cm01-y-94p010dm01">
+<h3>Bombas torre de enfriamiento (94P010CM01) y (94P010DM01)<a class="headerlink" href="#bombas-torre-de-enfriamiento-94p010cm01-y-94p010dm01" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 116.54 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_325_0.svg" src="_images/Analisis_Q2_325_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_326_0.svg" src="_images/Analisis_Q2_326_0.svg" /></div>
+</div>
+</section>
+<section id="bombas-torre-de-enfriamiento-94p010am01-y-94p010bm01">
+<h3>Bombas torre de enfriamiento (94P010AM01) y (94P010BM01)<a class="headerlink" href="#bombas-torre-de-enfriamiento-94p010am01-y-94p010bm01" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 123.34 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_329_0.svg" src="_images/Analisis_Q2_329_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_330_0.svg" src="_images/Analisis_Q2_330_0.svg" /></div>
+</div>
+</section>
+<section id="compresor-de-nitrogeno-k-1104">
+<h3>COMPRESOR DE NITROGENO (K-1104)<a class="headerlink" href="#compresor-de-nitrogeno-k-1104" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 25.67 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_333_0.svg" src="_images/Analisis_Q2_333_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_334_0.svg" src="_images/Analisis_Q2_334_0.svg" /></div>
+</div>
+</section>
+<section id="extrusora-21un20">
+<h3>Extrusora 21UN20<a class="headerlink" href="#extrusora-21un20" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 831.89 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_345_0.svg" src="_images/Analisis_Q2_345_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_347_0.svg" src="_images/Analisis_Q2_347_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 12964.290566145839
+AIC Periodo Anterior 4856.514345848148
+R^2 Periodo de estudio 0.44784308628883984
+R^2 Periodo Anterior 0.5536841844057605
+MSE Periodo de estudio 362.2916347759645
+MSE Periodo Anterior 246.00837268441325
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_348_0.svg" src="_images/Analisis_Q2_348_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 23377.901421768238
+AIC Periodo Anterior 9149.875232837372
+R^2 Periodo de estudio 0.043455031830124335
+R^2 Periodo Anterior 0.017012991943859856
+MSE Periodo de estudio 144359.2990967388
+MSE Periodo Anterior 87772.71139999418
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_349_0.svg" src="_images/Analisis_Q2_349_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_350_0.svg" src="_images/Analisis_Q2_350_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R^2 medio 0.6550084422442873
+Error cuadratico medio sobre el conjunto de Test: 26589.33 kW
+</pre></div>
+</div>
+<img alt="_images/Analisis_Q2_351_1.svg" src="_images/Analisis_Q2_351_1.svg" /><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Temp Barril 6</th>
+      <td>776.12</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 3</th>
+      <td>683.73</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 4</th>
+      <td>606.36</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 2</th>
+      <td>526.20</td>
+    </tr>
+    <tr>
+      <th>Melt Temp SUV</th>
+      <td>346.15</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 7</th>
+      <td>279.90</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 9</th>
+      <td>227.24</td>
+    </tr>
+    <tr>
+      <th>Rata extrusora P2 (F_CV)</th>
+      <td>146.50</td>
+    </tr>
+    <tr>
+      <th>Alimento de polvo (ROT)</th>
+      <td>146.49</td>
+    </tr>
+    <tr>
+      <th>Rata de Reproceso</th>
+      <td>143.18</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 10</th>
+      <td>92.27</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 11</th>
+      <td>-4.00</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 8</th>
+      <td>-603.42</td>
+    </tr>
+    <tr>
+      <th>Temp Barril 5</th>
+      <td>-794.05</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="compresor-20k060">
+<h3>Compresor (20K060)<a class="headerlink" href="#compresor-20k060" title="Permalink to this headline">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Durante el periodo de estudio, el consumo total fue de 184.95 MWh</p>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_358_0.svg" src="_images/Analisis_Q2_358_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_360_0.svg" src="_images/Analisis_Q2_360_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 12467.009853762642
+AIC Periodo Anterior 10404.717912702254
+R^2 Periodo de estudio 0.8360327491965189
+R^2 Periodo Anterior 0.7614826727777505
+MSE Periodo de estudio 4911.1887947319665
+MSE Periodo Anterior 402.9427339419408
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_361_0.svg" src="_images/Analisis_Q2_361_0.svg" /><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AIC Periodo de estudio 24055.149734926268
+AIC Periodo Anterior 14442.197239755134
+R^2 Periodo de estudio 0.9465723974749459
+R^2 Periodo Anterior 0.36633935308407517
+MSE Periodo de estudio 30135.491596074076
+MSE Periodo Anterior 5753.171642227573
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_362_0.svg" src="_images/Analisis_Q2_362_0.svg" /></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/Analisis_Q2_363_0.svg" src="_images/Analisis_Q2_363_0.svg" /></div>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="comentarios-equipo-celsia">
+<h1>Comentarios Equipo CELSIA<a class="headerlink" href="#comentarios-equipo-celsia" title="Permalink to this headline">#</a></h1>
+<p>Comentarios Informe Esenttia Q2 Octubre</p>
+<p>Para Q2 de octubre 17 días de análisis 15 al 31 de octubre de 2022</p>
+<p>Para Q2 de octubre 408 horas operativas posibles</p>
+<p><strong>Comentario para las gráficas de consumo general de cada planta y la consolidada:</strong></p>
+<p>Es muy importante comparar el consumo de la planta que se está analizando con la producción respectiva (al menos con resolución diaria). Esto es muy útil para sacar la eficiencia de la producción - indicador de intensidad energética (kWh/producción). De aquí también podemos entregarles una métrica muy valiosa que es la huella de carbono (por energía) del producto (TonCO2/producción). Idealmente para las bombas es clave comparar con el flujo (caudal) o con la energía hidráulica (presión de descarga y presión de succión) entregada para sacar indicadores de eficiencia reales.</p>
+<p>Se solicita datos de placa e información de selección de las bombas (punto de trabajo esperado)</p>
+<p><strong>Comentario para:</strong></p>
+<ul class="simple">
+<li><p>La bomba de propileno área 20 (G-0216)</p></li>
+<li><p>Bomba de Circulación de Agua de Torre 2 (G-0402)</p></li>
+</ul>
+<p>Observamos que las variaciones en la demanda de energía de este equipo siguen las variaciones en la demanda de energía de la planta 1, lo que permite inferir que este equipo tiene algún sistema de control y medición que actúa de acuerdo con ajustes en la producción. Este es un buen síntoma, aunque se debe profundizar más en el conocimiento de este equipo para concluir si hay o no oportunidades de optimización.</p>
+<p><strong>Comentario para las bombas/circuitos:</strong></p>
+<ul class="simple">
+<li><p>Bomba calentador propileno (G-0230) &amp; bomba calentador propileno (G-0232)</p></li>
+<li><p>Bomba de Cargue de Propileno (G-2013) &amp; Bomba de Circulación de Agua del E-4002 (G-4004)</p></li>
+<li><p>Bomba de Circulación de Agua de Torre N°5 (G-0405)</p></li>
+<li><p>Bombas torre de enfriamiento (94P010CM01) y (94P010DM01)</p></li>
+<li><p>Bombas torre de enfriamiento (94P010AM01) y (94P010BM01)</p></li>
+</ul>
+<p>Las variaciones en la demanda de energía diaria de este circuito son notablemente diferentes a lo observado en el consumo general de la planta correspondiente. Se requiere conocer algunos detalles de la operación de los equipos asociados a este circuito (por ejemplo: ¿existe alguna/s variable/s de proceso que deba controlar el equipo? ¿el equipo cuenta con variador de velocidad o actuadores que tomen acciones de acuerdo con la variación en la variable a controlar?) para concluir si hay una oportunidad de optimización implementando un sistema de control.</p>
+<p><strong>Comentario para las bombas/circuitos:</strong></p>
+<p>· Bomba de Circulación de Agua de Torre 4 (G-0404)</p>
+<p>· Bombas de Agua Tratada (G-0446) y (G-0447)</p>
+<p>Se tienen pocos datos para realizar un análisis del comportamiento de este equipo</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introducción</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Juan Carlos González Vélez<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
